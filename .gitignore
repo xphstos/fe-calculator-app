@@ -26,3 +26,5 @@ dist-ssr
 calculator-app-main
 *.zip
 .vscode
+
+public/CNAME
