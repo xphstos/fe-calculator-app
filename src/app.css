@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  color-scheme: light dark;
+}
+
+:root {
+  /* Neutral colors */
+  --white: hsl(0 0 100%);
+
+  &[data-theme="dark"] {
+    --ground: hsl(222, 26%, 31%);
+    --underground: hsl(223, 31%, 20%);
+    --screen: hsl(224, 36%, 15%);
+    --ink: hsl(0 0 100%);
+
+    --key: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+    --key-ink: hsl(221, 14%, 31%);
+
+    --key-clear: hsl(225, 21%, 49%);
+    --key-clear-shadow: hsl(224, 28%, 35%);
+    --key-clear-ink: hsl(0 0 100%);
+
+    --key-result: hsl(6, 63%, 50%);
+    --key-result-shadow: hsl(6, 70%, 34%);
+    --key-result-ink: hsl(0 0 100%);
+  }
+
+  &[data-theme="light"] {
+    --ground: hsl(0, 0%, 90%);
+    --underground: hsl(0, 5%, 81%);
+    --screen: hsl(0, 0%, 93%);
+    --ink: hsl(60, 10%, 19%);
+
+    --key: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --key-ink: hsl(60, 10%, 19%);
+
+    --key-clear: hsl(185, 42%, 37%);
+    --key-clear-shadow: hsl(185, 58%, 25%);
+    --key-clear-ink: hsl(0 0 100%);
+
+    --key-result: hsl(25, 98%, 40%);
+    --key-result-shadow: hsl(25, 99%, 27%);
+    --key-result-ink: hsl(0 0 100%);
+  }
+
+  &[data-theme="contrast"] {
+    --ground: hsl(268, 75%, 9%);
+    --underground: hsl(268, 71%, 12%);
+    --screen: hsl(268, 71%, 12%);
+    --ink: hsl(52, 100%, 62%);
+
+    --key: hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+    --key-ink: hsl(52, 100%, 62%);
+
+    --key-clear: hsl(281, 89%, 26%);
+    --key-clear-shadow: hsl(285, 91%, 52%);
+    --key-clear-ink: hsl(0 0 100%);
+
+    --key-result: hsl(176, 100%, 44%);
+    --key-result-shadow: hsl(177, 92%, 70%);
+    --key-result-ink: hsl(198, 20%, 13%);
+  }
+
+  @media (prefes-color-scheme: dark) {
+    --ground: hsl(222, 26%, 31%);
+    --underground: hsl(223, 31%, 20%);
+    --screen: hsl(224, 36%, 15%);
+    --ink: hsl(0 0 100%);
+
+    --key: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+    --key-ink: hsl(221, 14%, 31%);
+
+    --key-clear: hsl(225, 21%, 49%);
+    --key-clear-shadow: hsl(224, 28%, 35%);
+    --key-clear-ink: hsl(0 0 100%);
+
+    --key-result: hsl(6, 63%, 50%);
+    --key-result-shadow: hsl(6, 70%, 34%);
+    --key-result-ink: hsl(0 0 100%);
+  }
+
+  @media (prefers-color-sceme: light) {
+    --ground: hsl(0, 0%, 90%);
+    --underground: hsl(0, 5%, 81%);
+    --screen: hsl(0, 0%, 93%);
+    --ink: hsl(60, 10%, 19%);
+
+    --key: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+    --key-ink: hsl(60, 10%, 19%);
+
+    --key-clear: hsl(185, 42%, 37%);
+    --key-clear-shadow: hsl(185, 58%, 25%);
+    --key-clear-ink: hsl(0 0 100%);
+
+    --key-result: hsl(25, 98%, 40%);
+    --key-result-shadow: hsl(25, 99%, 27%);
+    --key-result-ink: hsl(0 0 100%);
+  }
+}
+
+html,
+body,
+main {
+  min-block-size: 100dvh;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+}
